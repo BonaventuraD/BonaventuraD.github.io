@@ -12,12 +12,12 @@ class ViewController extends Controller
     }
 
     
-    function showGreetings(){
-        return view('showgreetings');
+    function showTugasPHP(){
+        return view('tugasphp');
     }
 
     
-    function sayHi(Request $request){
-        return view('tugas');
+    function TugasPHPresult(Request $request){
+        return view('tugasphpresult');
     }
 }
