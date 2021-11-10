@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Filters Bootstrap</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <style>
+        body {
+            background-color: #303030;
+        }
+
+        .rainbow {
+            margin-top: 170px;
+            text-align: center;
+            font-size: 110px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            animation: colorRotate 6s linear 0s infinite;
+        }
+
+        @keyframes colorRotate {
+            from {
+                color: #6666ff;
+            }
+
+            10% {
+                color: #0099ff;
+            }
+
+            50% {
+                color: #00ff00;
+            }
+
+            75% {
+                color: #ff3399;
+            }
+
+            100% {
+                color: #6666ff;
+            }
+        }
+
+        .form-control {
+            border-radius: 50px;
+            color: black;
+            height: 50px;
+            margin-left: auto;
+            margin-right: auto;
+
+
+
+        }
+
+        .rainbow-box {
+
+            margin-top: 20px;
+            background-color: transparent;
+            border: 5px solid transparent;
+            border-radius: 10px;
+            border-image: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
+            border-image-slice: 1;
+            height: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            width: 20px;
+            animation: spin 5s infinite linear;
+        }
+
+        @keyframes spin {
+            100% {
+                transform: rotate(-360deg);
+            }
+        }
+
+
+        .search {
+            color: white;
+            margin-top: 15px;
+            background-color: #222222;
+            border-radius: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            width: auto;
+            padding: 1.5em;
+        }
+
+        .search p {
+            border-radius: 5px;
+            padding-left: 5px;
+        }
+
+        .search a:visited {
+            text-decoration: none;
+            color: white;
+
+        }
+
+        .search a:hover {
+            text-decoration: none;
+            color: white;
+
+        }
+
+        .search p:hover {
+            text-decoration: none;
+            background-color: grey;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <nav class="navbar navbar-inverse">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <a class="navbar-brand" href="#">Googel</a>
+                        </div>
+                        <ul class="nav navbar-nav">
+                            <li><a href="#">GooMail</a></li>
+                            <li><a href="#">GooImages</a></li>
+                            <li><a href="#">GooClassroom</a></li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+        </nav>
+
+
+
+
+        <div class="container">
+            <h2 class="rainbow">Googel</h2>
+            <div class="rainbow-box"></div>
+
+            <p class="typesomething" style="color: white; margin-top: 50px;">Type below to fiter your search..</p>
+            <input class="form-control" id="myInput" type="text" placeholder="Bootstrap...">
+            <div class="search" id="myDIV"  style="cursor:pointer;">
+                <a href="https://www.w3schools.com/bootstrap/default.asp">
+                    <p>Bootstrap HOME</p>
+                </a>
+                <a href="https://www.w3schools.com/bootstrap/bootstrap_get_started.asp">
+                    <p>Bootstrap Get Started</p>
+                </a>
+                <a href="https://www.w3schools.com/bootstrap/bootstrap_grid_basic.asp">
+                    <p>Bootstrap Grid Basic</p>
+                </a>
+                <a href="https://www.w3schools.com/bootstrap/bootstrap_typography.asp">
+                    <p>Bootstrap Typography</p>
+                </a>
+                <a href="https://www.w3schools.com/bootstrap/bootstrap_tables.asp">
+                    <p>Bootstrap Table</p>
+                </a>
+                <a href="https://www.w3schools.com/bootstrap/bootstrap_images.asp">
+                    <p>Bootstrap Images</p>
+                </a>
+                <a href="https://www.w3schools.com/bootstrap/bootstrap_jumbotron_header.asp">
+                    <p>Bootstrap Jumbotron</p>
+                </a>
+                <a href="https://www.w3schools.com/bootstrap/bootstrap_wells.asp">
+                    <p>Bootstrap Wells</p>
+                </a>
+                <a href="https://www.w3schools.com/bootstrap/bootstrap_alerts.asp">
+                    <p>Bootstrap Alerts</p>
+                </a>
+                <a href="https://www.w3schools.com/bootstrap/bootstrap_buttons.asp">
+                    <p>Bootstrap Buttons</p>
+                </a>
+
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        $(document).ready(function(){
+          $("#myInput").on("keyup", function() {
+            var value = $(this).val().toLowerCase();
+            $("#myDIV *").filter(function() {
+              $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+            });
+          });
+        });
+        </script>
+
+</body>
+
+</html>

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Deva's Profile</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+    <div>
+        <h2 class="devalink" id="home">link here</h2>
+    </div>
+
+
+    <section class="thisprofile">
+        <div class="profile">
+            <div class="welcome">
+                <h1>Welcome to my profile!</h1>
+            </div>
+            <div class="name">
+                <h2>My name is Bonaventura Daiva Putra</h2>
+
+                <div class="content">
+                    <p>I’m from Indonesia and a 19 years old Student at Sepuluh Nopember Institute
+                        of Technology and took Information Systems as my major. In the past few years on
+                        this pandemic situation i’ve been studying UI/UX and Web Designing on my own. I like
+                        to express my creativity and my skill in my free time on creating and designing
+                        something that i like. The purpose of me making this portfolio is to show you my
+                        works and giving you motivation to learn and do something you love, even in this
+                        pandemic situation. Believe in yourself that you can make it!</p>
+                </div>
+            </div>
+            <div class="backdrop"></div>
+            <div class="kotak"></div>
+            <div class="silang1"></div>
+            <div class="silang2"></div>
+            <div class="segitiga"></div>
+
+            <div class="lingkaran"></div>
+            <div class="picture">
+                <div class="inner transiition">
+                    <img src="images/bnw.png" alt="">
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <div class="quotes">
+        <i>
+            "Hiduplah seakan-akan kamu akan mati besok. <br>
+            Belajarlah seakan-akan kamu akan hidup selamanya."<br> -Mahatma Gandhi
+        </i>
+
+    </div>
+    <section class="button">
+        <div class="emailmebutton">
+            <a href="mailto:bonaventura.deva@gmail.com"><button
+                    style="cursor: pointer; color: white;border: none; background-color: #900C3E; font-size: 30px;">
+                    Email Me</button></a>
+            <img src="images/email.png" alt="">
+        </div>
+    </section>
+    <section class="icon">
+
+        <div>
+
+            <div class="whatsapplogo">
+                <a href="https://wa.link/pevo9r"><img src="images/whatsapp.png" alt=""></a>
+            </div>
+            <div class="instagramlogo">
+                <a href="https://instagram.com/deva1504"><img src="images/instagram.png" alt=""></a>
+            </div>
+            <div class="youtubelogo">
+                <a href="https://www.youtube.com/channel/UCC1tTB6nHSTVSo1PgVOpgYw"><img src="images/youtube.png"
+                        alt=""></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="page2">
+        <div class="myskillid" id="skills">
+            <h2>link</h2>
+        </div>
+        <div class="myskills">
+            <b>
+                My skills
+            </b>
+
+        </div>
+        <div class="table">
+            <table border="1" cellspacing="0" cellpadding="5">
+                <caption>
+                    <h3><i>Skills</i></h3>
+                </caption>
+
+                <tr>
+                    <th>Soft Skills</th>
+                    <th>Hard Skills</th>
+                </tr>
+                <tr>
+                    <td>Creativity</td>
+                    <td>Adobe Premiere Pro</td>
+                </tr>
+                <tr>
+                    <td>Collaboration</td>
+                    <td>Adobe After Effect</td>
+                </tr>
+                <tr>
+                    <td>Responsibility</td>
+                    <td>Adobe Photoshop</td>
+                </tr>
+
+            </table>
+        </div>
+
+    </section>
+    <section class="page3">
+        <div class="myworksid" id="works">
+            <h2>link</h2>
+        </div>
+        <div class="myworks">
+            <b>
+                My works
+            </b>
+        </div>
+        <div class="worktext">
+            My very first Web Design Project
+        </div>
+        <div class="w3-content" style="max-width:720px; max-height: 480px;">
+            <img class="mySlides" src="images/slideshow1.png" style="width:480px; height:240px ;display:none">
+            <img class="mySlides" src="images/slideshow2.png" style="width:480px; height:240px">
+            <img class="mySlides" src="images/slideshow4.png" style="width:480px; height:240px;display:none">
+
+            <div class="row">
+                <div class="column">
+                    <img class="demo w3-opacity w3-hover-opacity-off" src="images/slideshow1.png"
+                        style="width:80%;height:100px;cursor:pointer" onclick="currentDiv(1)">
+                </div>
+                <div class="column">
+                    <img class="demo w3-opacity w3-hover-opacity-off" src="images/slideshow2.png"
+                        style="width:80%;height:100px;cursor:pointer" onclick="currentDiv(2)">
+                </div>
+                <div class="column">
+                    <img class="demo w3-opacity w3-hover-opacity-off" src="images/slideshow4.png"
+                        style="width:80%;height:100px;cursor:pointer" onclick="currentDiv(3)">
+                </div>
+            </div>
+        </div>
+
+        <script>
+            function currentDiv(n) {
+                showDivs(slideIndex = n);
+            }
+
+            function showDivs(n) {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("demo");
+                if (n > x.length) { slideIndex = 1 }
+                if (n < 1) { slideIndex = x.length }
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" w3-opacity-off", " ");
+                }
+                x[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " w3-opacity-off";
+            }
+        </script>
+
+
+    </section>
+
+    </section>
+    <section class="page4">
+        <div class="contact" id="contactid">
+            <h2>link</h2>
+        </div>
+        <div class="aboutme">
+            <b>
+                About Me!
+            </b>
+        </div>
+        <div class="abouticon">
+            <img src="images/location.png" alt="">
+            <img src="images/email.png" alt="">
+            <img src="images/whatsapp.png" alt="">
+        </div>
+        <div class="about">
+            Puri Surya Jaya, Taman Athena blok i3 no.12, Gedangan, Sidoarjo, Jawa Timur, 61254
+            <br>
+            bonaventura.deva@gmail.com
+            <br>
+            +62 812 1621 4615
+        </div>
+    </section>
+    <header>
+        <a href="#home" class="logo">home</a>
+
+
+        <ul>
+            <li><a href="#skills">my skill</a></li>
+            <li><a href="#works">my work</a></li>
+            <li><a href="#contactid">contact</a></li>
+
+        </ul>
+
+    </header>
+
+
+
+</body>
+
+</html>
