@@ -17,9 +17,9 @@
 	<form action="/tugas/update" method="post">
 		{{ csrf_field() }}
 		<input type="hidden" name="ID" value="{{ $t->ID }}"> <br/>
-        ID Pegawai <input type="number" name="ID Pegawai" required="required" value="{{ $t->IDPegawai }}"> <br/>
+        ID Pegawai <input type="number" name="IDPegawai" required="required" value="{{ $t->IDPegawai }}"> <br/>
 		Tanggal <input type="date" name="Tanggal" required="required" value="{{ $t->Tanggal }}" > <br/>
-		Nama Tugas <input type="text" name="Nama Tugas" required="required" value="{{ $t->NamaTugas }}"> <br/>
+		Nama Tugas <input type="text" name="NamaTugas" required="required" value="{{ $t->NamaTugas }}"> <br/>
         Status <input type="text" name="Status" required="required" value="{{ $t->Status }}"> <br/>
 		<input type="submit" value="Simpan Data">
 	</form>

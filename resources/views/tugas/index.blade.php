@@ -15,7 +15,7 @@
 
 	<table border="1">
 		<tr>
-			<th>ID</th>
+
 			<th>ID Pegawai</th>
 			<th>Tanggal</th>
 			<th>Nama Tugas</th>
@@ -23,7 +23,7 @@
 		</tr>
 		@foreach($tugas as $t)
 		<tr>
-			<td>{{ $t->ID }}</td>
+
 			<td>{{ $t->IDPegawai }}</td>
 			<td>{{ $t->Tanggal }}</td>
 			<td>{{ $t->NamaTugas }}</td>
