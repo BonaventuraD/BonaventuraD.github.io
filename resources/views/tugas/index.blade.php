@@ -1,12 +1,16 @@
+@extends('layout.happy')
+@section('title', 'Data Tugas')
+@section('judulhalaman', 'DATA TUGAS')
+
+@section('konten')
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Tugas</title>
+
 </head>
 <body>
 
 
-	<h3>Data Tugas</h3>
 
 	<a href="/tugas/tambah"> + Tambah Tugas</a>
 
@@ -40,3 +44,4 @@
 
 </body>
 </html>
+@endsection
