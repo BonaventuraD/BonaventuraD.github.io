@@ -24,6 +24,7 @@
 <body>
     <div class="container">
         <div class="row">
+
             <div class="col-sm-3">
                 <header>
                     <img style="width:150px"src="../../images/deva.jpg" alt="">
@@ -47,7 +48,7 @@
                 @show
             </div>
 
-
+        </div>
 
 
     </div>
