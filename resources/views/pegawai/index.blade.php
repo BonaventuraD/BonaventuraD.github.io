@@ -10,13 +10,12 @@
 </head>
 <body>
 
-
-	<a href="/pegawai/tambah"> + Tambah Pegawai Baru</a>
+    <a href="/tugas/tambah"><button type="button" class="btn btn-primary">Tambah Pegawai Baru</button></a>
 
 	<br/>
 	<br/>
 
-	<table border="1">
+	<table class="table table-bordered table-responsive-sm table-striped" >
 		<tr>
 			<th>Nama</th>
 			<th>Jabatan</th>
@@ -31,9 +30,9 @@
 			<td>{{ $p->pegawai_umur }}</td>
 			<td>{{ $p->pegawai_alamat }}</td>
 			<td>
-				<a href="/pegawai/edit/{{ $p->pegawai_id }}">Edit</a>
+				<a href="/pegawai/edit/{{ $p->pegawai_id }}"><button type="button" class="btn btn-warning"><img src="https://img.icons8.com/material-outlined/24/ffffff/edit--v1.png"/> Edit</button></a>
 				|
-				<a href="/pegawai/hapus/{{ $p->pegawai_id }}">Hapus</a>
+				<a href="/pegawai/hapus/{{ $p->pegawai_id }}"><button type="button" class="btn btn-danger"><img src="https://img.icons8.com/material-outlined/24/ffffff/filled-trash.png"/> Hapus</button></a>
 			</td>
 		</tr>
 		@endforeach

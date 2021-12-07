@@ -18,6 +18,8 @@
 
     <style>
         body{padding-top: 100px};
+
+
     </style>
 </head>
 
@@ -26,22 +28,26 @@
         <div class="row">
 
             <div class="col-sm-3">
-                <header>
-                    <img style="width:150px"src="../../images/deva.jpg" alt="">
-                    <br><br>Bonaventura Daiva Putra
-                    <br>5026201096
+                <div class="col-sm-12" style=" padding:20px; background-color:rgba(128, 128, 128, 0.432); border-radius:12px; margin-bottom:20px">
+                    <div class="text-center">
+                    <header>
+                    <img class="img-rounded" style="width:150px"src="../../images/deva.jpg" alt="">
+                    <br><br><h3>Bonaventura Daiva Putra
+                        <br><br>5026201096</h3>
                 </header>
-                <br><br><br><br>
-                <h3>Menu</h3>
+                 </div>
+                </div>
+
+                <div class="col-sm-12" style=" padding:20px; background-color:rgba(128, 128, 128, 0.432); border-radius:12px; ">
+                <h3 class="text-center">Menu</h3>
 
                 <a href="/pegawai">Pegawai</a><br>
                 <a href="/absen">Absen</a><br>
                 <a href="/tugas">Tugas</a><br>
-                <a href="">Praktikum</a><br>
-                <br><br><br><br>
-                <footer> © Copyright 2021 <br> 5026201096 - Bonaventura Daiva Putra
-                </footer>
-            </div>
+                <a href=""><s>Praktikum</s></a><br>
+
+                </div>
+                </div>
             <div class="col-sm-9">
                 <h1>@yield('judulhalaman')</h1><br>
                 @section('konten')
@@ -50,8 +56,15 @@
 
         </div>
 
+        <footer>
+            <div style="bottom:0; position: fixed; left: 0; text-align: center; width: 100%; margin-bottom:10px;">
+                © 2021 Copyright: 5026201096 - Bonaventura Daiva Putra
+
+              </div>
+        </footer>
 
     </div>
+
 </body>
 
 </html>

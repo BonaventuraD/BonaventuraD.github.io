@@ -8,13 +8,13 @@
 <body>
 
 
+    <a href="/tugas/tambah"><button type="button" class="btn btn-primary">Tambah Absen Baru</button></a>
 
-	<a href="/absen/tambah"> + Tambah Absen Baru</a>
 
 	<br/>
 	<br/>
 
-	<table border="1">
+	<table class="table table-bordered table-responsive-sm table-striped" >
 		<tr>
 			<th>ID Pegawai</th>
 			<th>Tanggal</th>
@@ -27,9 +27,9 @@
 			<td>{{ $a->Tanggal }}</td>
 			<td>{{ $a->Status }}</td>
 			<td>
-				<a href="/absen/edit/{{ $a->ID}}">Edit</a>
+				<a href="/absen/edit/{{ $a->ID}}"><button type="button" class="btn btn-warning"><img src="https://img.icons8.com/material-outlined/24/ffffff/edit--v1.png"/> Edit</button></a>
 				|
-				<a href="/absen/hapus/{{ $a->ID}}">Hapus</a>
+				<a href="/absen/hapus/{{ $a->ID}}"><button type="button" class="btn btn-danger"><img src="https://img.icons8.com/material-outlined/24/ffffff/filled-trash.png"/> Hapus</button></a>
 			</td>
 		</tr>
 		@endforeach
