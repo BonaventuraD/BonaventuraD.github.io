@@ -37,7 +37,7 @@
                     <div class="form-group">
                         <label for="dtpickerdemo" class="col-sm-2 control-label">Tanggal :</label>
                         <div class='col-sm-4 input-group date' id='dtpickerdemo'>
-                            <input type='text' class="form-control" name="tanggal" required="required" value="{{ $a->Tanggal }}" />
+                            <input type='text' class="form-control" name="tanggal" required="required" value="{{ $a->Tanggal }}">
                             <span class="input-group-addon">
                                 <span class="glyphicon glyphicon-calendar"></span>
                             </span>
@@ -62,7 +62,7 @@
         <label for="a">TIDAK HADIR</label><br>
 
 
-		<input type="submit" value="Simpan Data">
+		<button type="submit" class="btn btn-success" value="Simpan Data">Simpan Data</button>
 	</form>
 	@endforeach
 

@@ -17,8 +17,15 @@
     </script>
 
     <style>
-        body{padding-top: 100px};
-
+        body{padding-top: 100px;}
+        .a{ margin-top: 25px}
+        .a a{ color:black;
+            margin-bottom:12px;
+            display:block;
+        transition-duration: 0.4s}
+        .a a:hover {text-decoration: none;
+            color: white;
+        }
 
     </style>
 </head>
@@ -27,8 +34,8 @@
     <div class="container">
         <div class="row">
 
-            <div class="col-sm-3">
-                <div class="col-sm-12" style=" padding:20px; background-color:rgba(128, 128, 128, 0.432); border-radius:12px; margin-bottom:20px">
+            <div class="col-md-3">
+                <div class="col-md-12" style=" padding:20px; background-color:rgba(128, 128, 128, 0.432); border-radius:12px; margin-bottom:20px">
                     <div class="text-center">
                     <header>
                     <img class="img-rounded" style="width:150px"src="../../images/deva.jpg" alt="">
@@ -38,17 +45,17 @@
                  </div>
                 </div>
 
-                <div class="col-sm-12" style=" padding:20px; background-color:rgba(128, 128, 128, 0.432); border-radius:12px; ">
+                <div class="col-md-12" style=" padding:20px; background-color:rgba(128, 128, 128, 0.432); border-radius:12px; ">
                 <h3 class="text-center">Menu</h3>
-
-                <a href="/pegawai">Pegawai</a><br>
-                <a href="/absen">Absen</a><br>
-                <a href="/tugas">Tugas</a><br>
-                <a href=""><s>Praktikum</s></a><br>
-
+                    <h4 class="a">
+                        <a  href="/pegawai">Pegawai</a>
+                        <a  href="/absen">Absen</a>
+                        <a  href="/tugas">Tugas</a>
+                        <a  href="/unggas">Unggas</a>
+                    </h4>
                 </div>
-                </div>
-            <div class="col-sm-9">
+            </div>
+            <div class="col-md-9">
                 <h1>@yield('judulhalaman')</h1><br>
                 @section('konten')
                 @show
@@ -57,7 +64,7 @@
         </div>
 
         <footer>
-            <div style="bottom:0; position: fixed; left: 0; text-align: center; width: 100%; margin-bottom:10px;">
+            <div style="bottom:0; left: 0; position:absolute; text-align: center; width: 100%; margin-bottom:10px;">
                 © 2021 Copyright: 5026201096 - Bonaventura Daiva Putra
 
               </div>
