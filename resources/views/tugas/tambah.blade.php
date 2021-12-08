@@ -28,7 +28,7 @@
         <div class="col-sm-3">Status</div>
         <div class="col-sm-9"> <input type="text" name="Status" required="required"> </div>
 
-        <div class="col-sm-6" style="margin-top: 20px"><input type="submit" value="Simpan Data"></div>
+        <div class="col-sm-6" style="margin-top: 20px"><button type="submit" class="btn btn-success" value="Simpan Data">Simpan Data</button></div>
         <div class="col-sm-6"></div>
 
 	</form>

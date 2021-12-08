@@ -8,7 +8,7 @@
 <body>
 
 
-    <a href="/tugas/tambah"><button type="button" class="btn btn-primary">Tambah Absen Baru</button></a>
+    <a href="/absen/tambah"><button type="button" class="btn btn-primary">Tambah Absen Baru</button></a>
 
 
 	<br/>

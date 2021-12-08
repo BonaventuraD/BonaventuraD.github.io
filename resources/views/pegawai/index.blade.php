@@ -10,7 +10,7 @@
 </head>
 <body>
 
-    <a href="/tugas/tambah"><button type="button" class="btn btn-primary">Tambah Pegawai Baru</button></a>
+    <a href="/pegawai/tambah"><button type="button" class="btn btn-primary">Tambah Pegawai Baru</button></a>
 
 	<br/>
 	<br/>

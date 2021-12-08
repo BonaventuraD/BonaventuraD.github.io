@@ -56,7 +56,7 @@
         <label for="h">HADIR</label><br>
         <input type="radio" id="a" name="status" value="A" checked="checked">
         <label for="a">TIDAK HADIR</label><br>
-        <input type="submit" value="Simpan Data">
+        <button type="submit" class="btn btn-success" value="Simpan Data">Simpan Data</button>
     </form>
 @endsection
 
