@@ -16,7 +16,7 @@
 	<br/>
 
 	@foreach($nilaikuliah as $n)
-	<form action="/pegawai/update" method="post">
+	<form action="/nilaikuliah/update" method="post">
 		{{ csrf_field() }}
 
         <div class="col-sm-3">NRP </div>
