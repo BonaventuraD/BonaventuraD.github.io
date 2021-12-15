@@ -52,6 +52,7 @@
                         <a  href="/absen">Absen</a>
                         <a  href="/tugas">Tugas</a>
                         <a  href="/unggas">Unggas</a>
+                        <a  href="/nilaikuliah">Nilai Kuliah</a>
                     </h4>
                 </div>
             </div>

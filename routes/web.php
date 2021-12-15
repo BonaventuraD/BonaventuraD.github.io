@@ -63,3 +63,9 @@ Route::get('/unggas/hapus/{id}','UnggasController@hapus');
 Route::get('/unggas/cari','UnggasController@cari');
 Route::get('/unggas/detail/{id}','UnggasController@view');
 
+Route::get('/nilaikuliah','NilaikuliahController@index');
+Route::get('/nilaikuliah/tambah','NilaikuliahController@tambah');
+Route::post('/nilaikuliah/store','NilaikuliahController@store');
+Route::get('/nilaikuliah/edit/{id}','NilaikuliahController@edit');
+Route::post('/nilaikuliah/update','NilaikuliahController@update');
+Route::get('/nilaikuliah/hapus/{id}','NilaikuliahController@hapus');
