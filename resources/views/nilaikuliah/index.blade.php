@@ -36,7 +36,7 @@
 			    @if ($n->NilaiAngka <= 40) <td>D</td>
             @elseif (($n->NilaiAngka >= 41) & ($n->NilaiAngka <= 60))<td>C</td>
             @elseif (($n->NilaiAngka >= 61) & ($n->NilaiAngka <= 80))<td>B</td>
-            @else ($n->NilaiAngka >= 81)<td>A</td>
+            @else <td>A</td>
             @endif
 
             <td>{{(($n->NilaiAngka)*($n->SKS))}}</td>

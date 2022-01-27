@@ -49,7 +49,7 @@ public function edit($id)
 
 
 	// passing data nilaikuliah yang didapat ke view edit.blade.php
-	return view('nilaikuliah.edit');
+	return view('nilaikuliah.edit',['nilaikuliah' => $nilaikuliah]);
 
 }
 
